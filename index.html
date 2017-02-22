@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>NEP - C&aacute;lculo de la luz 2017</title>
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" /> 
+		<link rel="stylesheet" type="text/css" href="css/default.css?abc" />
+		<link rel="icon" type="image/svg" href="img/favicon.svg" />
+		<script src="js/cuadro.js"></script>
+		<script src="js/main.js"></script>
+		
+	</head>
+	<body style="display: none">
+		<header>
+			<img src="img/logo.svg" />
+			<h1>C&aacute;lculo de la luz 2017</h1>
+		</header>
+		<main>
+			<form method="POST" onsubmit="return window.consultar(this);">
+				<p>
+					<label id="consumo">Consumo Enero 2017 o anterior (en kWh Bimestral)</label>
+					<input type="number" name="consumo" id="consumo" min="1" max="5800" required="required" />
+				</p>
+				<p>
+					<label for="compania">Compania</label>
+					<select id="compania" name="compania" required="required">
+						<option value="edesur">Edesur</option>
+						<option value="edenor">Edenor</option>
+					</select>
+				</p>
+				<p>
+					<label for="iva">IVA</label>
+					<select id="iva" name="iva" required="required">
+						<option value="21">21%</option>
+						<option value="27">27%</option>
+					</select>
+				</p>
+				<p>
+					<input type="submit" name="calcular" value="Calcular" />
+				</p>
+			</form>
+			<div class="result">
+				<a href="javascript:history.back();">Volver</a>
+				<table>
+					<thead>
+						<tr>
+							<th>Periodo</th>
+							<th>Cat</th>
+							<th>Monto</th>
+							<th>Aum%</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<p>Calculo para Usuarios Residenciales Sin ahorro.</p>
+				<p>*Incremento con respecto a Enero 2017 o anterior, incluye Impuestos: IVA, Res.ENRE 347/2012, Cont.Municipal (6,3830%).</p>
+				<p>** Metodologia: Se tomaron las variables publicadas en <a href="http://www.enre.gob.ar">www.enre.gob.ar</a>, <a href="http://www.edenor.com.ar">www.edenor.com.ar</a>, <a href="http://www.edesur.com.ar">www.edesur.com.ar</a>.</p>
+ 				<p>Los cargos fijos y variables se encuentran publicados en los nuevos cuadros tarifarios de la resoluciónes ENRE 64/2017,82/2017,83/2017 y 92/2017. Existen nueve niveles de tarifas residenciales determinados por la cantidad de kwh consumidos mensualmente. 
+Dif.Prob. + 0,5 / - 0,5</p>
+			</div>
+		</main>
+	</body>
+</html>

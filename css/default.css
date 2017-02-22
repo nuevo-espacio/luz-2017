@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto';
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+header {
+    background-color: #003760;
+}
+
+main {
+    max-width: 420px;
+    display: inline-block;
+    padding: 35px 15px 10px 15px;
+    width: calc(100% - 30px);
+    text-align: left;
+}
+
+
+h1 {
+    background-color: #333;
+    color: #eee;
+    margin: 0px;
+    padding: 15px 5px 15px 25px;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+label {
+    display: block;
+    padding: 0px 0px 0px 0px;
+    color: #333;
+}
+
+
+form label:after {
+    content: ':';
+}
+
+p {
+    margin: 0px;
+}
+
+input , select {
+    height: 35px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: solid 1px #999;
+    background-color: #fefefe;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.result {
+    display: none;
+}
+
+.procesing form , .complete form {
+    display: none;
+}
+
+
+.complete .result {
+    display: block;
+}
+
+body > div:last-child {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+td, th {
+    border: solid 1px #333;
+    padding: 5px;
+}
+
+td:last-child {
+    white-space: nowrap;
+}
+
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+td:first-child {
+    width: 100%;
+}
+
+.result > a:link , .result > a:visited {
+    color: #333;
+    display: inline-block;
+    text-decoration: none;
+    
+    line-height: 35px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    border: solid 1px #999;
+    background-color: #fefefe;
+    border-radius: 2px;
+    text-align: center;
+    font-family: arial;
+    font-size: 13.3px;
+}
+
+
+p a:link , p a:visited {
+    color: #2BABDE;
+}
+
+
+img {
+    margin-right: -20px;   
+}
+
+
+progress {
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 25px;
+}
+
+.result p {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #494949;
+}
