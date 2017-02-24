@@ -43,7 +43,7 @@
             
             if(periodo.bimestral) {
                 fijo = fijo * 32 / 61;
-                variable = variable * 31 / 65;
+                variable = variable * 32 / 65;
             }
             
             var subtotal = fijo + variable;
